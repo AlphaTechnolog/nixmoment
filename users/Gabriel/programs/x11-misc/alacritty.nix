@@ -36,7 +36,7 @@
         });
 
       window = let
-        padding = 12;
+        padding = 16;
       in {
         padding = {
           x = padding;

@@ -12,5 +12,7 @@
     htop
     chromium
     maim
+    clang
+    clang-tools
   ];
 }

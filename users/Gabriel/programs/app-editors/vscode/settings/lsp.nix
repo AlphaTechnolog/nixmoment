@@ -10,4 +10,5 @@
   "zig.path" = lib.getExe pkgs.zig;
   "zig.initialSetupDone" = true;
   "zig.zls.path" = lib.getExe pkgs.zls;
+  "[lua]"."editor.defaultFormatter" = "JohnnyMorganz.stylua";
 }

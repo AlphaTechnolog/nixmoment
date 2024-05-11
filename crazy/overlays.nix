@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   nixpkgs.overlays = let
     fontsOverlays = _: prev: {
       material-symbols = prev.callPackage ./pkgs/material-symbols.nix {};
@@ -13,7 +17,6 @@
       inherit (inputs) nixpkgs-f2k;
     in
       with nixpkgs-f2k.packages.${system}; {
-        inherit picom-git;
         awesome = awesome-luajit-git;
       };
 
@@ -22,6 +25,17 @@
       inherit (inputs) cutefetch;
     in {
       cutefetch = cutefetch.packages.${system}.default;
+
+      picom-git = prev.picom.overrideAttrs (old: {
+        src = inputs.picom-sdhand-src;
+        version = "sdhand-git";
+        buildInputs =
+          (old.buildInputs or [])
+          ++ [
+            pkgs.pcre
+            pkgs.xorg.xcbutil
+          ];
+      });
 
       discord-canary = prev.discord-canary.override {
         withOpenASAR = true;

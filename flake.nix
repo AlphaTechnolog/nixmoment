@@ -21,6 +21,11 @@
       url = "github:decaycs/decay-discord";
       flake = false;
     };
+
+    picom-sdhand-src = {
+      url = "github:sdhand/picom";
+      flake = false;
+    };
   };
 
   outputs = {

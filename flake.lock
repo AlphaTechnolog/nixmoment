@@ -394,6 +394,22 @@
         "type": "github"
       }
     },
+    "picom-sdhand-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588721483,
+        "narHash": "sha256-bUjuiPKkBQs8kOb0pp1f9wGW13OJcDDyCuQR1bzhIKY=",
+        "owner": "sdhand",
+        "repo": "picom",
+        "rev": "a99772b6d540194628800e0168d587cf1d62b097",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sdhand",
+        "repo": "picom",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "apple-cursor-src": "apple-cursor-src",
@@ -402,7 +418,8 @@
         "home-manager": "home-manager",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs_3",
-        "nixpkgs-f2k": "nixpkgs-f2k"
+        "nixpkgs-f2k": "nixpkgs-f2k",
+        "picom-sdhand-src": "picom-sdhand-src"
       }
     },
     "rust-analyzer-src": {

@@ -10,6 +10,7 @@
     playerctl
     psmisc
     htop
+    chromium
     maim
   ];
 }

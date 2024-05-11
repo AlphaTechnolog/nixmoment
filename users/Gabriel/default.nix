@@ -7,7 +7,6 @@
   home = with flakeConfig.user; {
     username = name;
     homeDirectory = "/home/${name}";
-    packages = [pkgs.firefox];
     stateVersion = "23.11";
   };
 

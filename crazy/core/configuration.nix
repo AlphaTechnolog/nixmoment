@@ -11,5 +11,6 @@
     ./system.nix
     ./fonts.nix
     ./virtualisation.nix
+    ./bluetooth.nix
   ];
 }

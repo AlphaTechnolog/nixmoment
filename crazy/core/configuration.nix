@@ -10,5 +10,6 @@
     ./nix.nix
     ./system.nix
     ./fonts.nix
+    ./virtualisation.nix
   ];
 }

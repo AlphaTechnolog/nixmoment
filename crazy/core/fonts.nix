@@ -8,7 +8,7 @@
 
       defaultFonts = {
         emoji = ["Noto Color Emoji"];
-        monospace = ["Comic Code Ligatures" "Iosevka Nerd Font" "JetBrainsMono Nerd Font" "Noto Color Emoji"];
+        monospace = ["JetBrainsMono Nerd Font" "Comic Code Ligatures" "Iosevka Nerd Font" "Noto Color Emoji"];
         serif = ["Noto Serif" "Noto Color Emoji"];
         sansSerif = ["Inter" "Noto Color Emoji"];
       };

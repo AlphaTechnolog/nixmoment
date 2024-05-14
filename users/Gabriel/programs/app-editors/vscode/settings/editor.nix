@@ -12,5 +12,5 @@
   "editor.scrollbar.vertical" = "hidden";
   "editor.scrollbar.horizontal" = "hidden";
   "terminal.integrated.fontFamily" = "monospace";
-  "terminal.integrated.fontSize" = 15;
+  "terminal.integrated.fontSize" = 14;
 }

@@ -15,14 +15,6 @@
           family = "monospace";
           style = "Semibold";
         };
-
-        offset = {
-          y = 2;
-        };
-
-        glyph_offset = {
-          y = 1;
-        };
       };
 
       # flakeConfig.colorscheme already follows the alacritty spec (mostly).

@@ -3,6 +3,12 @@
 {pkgs}:
 pkgs.vscode-utils.extensionsFromVscodeMarketplace [
   {
+    name = "tokyo-night";
+    publisher = "enkia";
+    version = "1.0.6";
+    sha256 = "0a0f7d0rk0z4hs3gfw96piyrz1xqhrj2c3ij6kfvy2wj9q0m8rsm";
+  }
+  {
     name = "rust-bundle";
     publisher = "1yib";
     version = "1.0.0";

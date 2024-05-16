@@ -23,33 +23,28 @@
   # define the colorscheme used for the themeable applications
   # some of them may not be themeable because they may be not
   # "nixerised", e.g: the awesomewm config (at least yet).
-  colorscheme = {
+  colorscheme = rec {
     primary = {
-      background = "#131313";
-      foreground = "#b6beca";
+      background = "#181923";
+      foreground = "#c0caf5";
     };
 
     normal = {
-      black = "#202020";
-      blue = "#89a8d2";
-      cyan = "#8bb8d2";
-      green = "#8cc7a9";
-      magenta = "#c29eda";
-      red = "#c6797c";
-      white = "#e0e1e4";
-      yellow = "#dcc89f";
+      black = "#2c2e40";
+      red = "#f7768e";
+      green = "#9ece6a";
+      yellow = "#e0af68";
+      blue = "#7aa2f7";
+      magenta = "#bb9af7";
+      cyan = "#7dcfff";
+      white = "#a9b1d6";
     };
 
-    bright = {
-      black = "#2c2c2c";
-      blue = "#89a8d2";
-      cyan = "#8bb8d2";
-      green = "#8cc7a9";
-      magenta = "#c29eda";
-      red = "#c6797c";
-      white = "#e0e1e4";
-      yellow = "#dcc89f";
-    };
+    bright =
+      normal
+      // {
+        black = "#34374c";
+      };
   };
 
   # this is used across all the flake content, defines metadata for the user, such as the name and

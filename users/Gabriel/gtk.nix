@@ -10,7 +10,7 @@
     };
 
     iconTheme = {
-      name = "Papirus-Light";
+      name = "Papirus";
       package = pkgs.papirus-icon-theme;
     };
 

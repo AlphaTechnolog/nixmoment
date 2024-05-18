@@ -1,6 +1,9 @@
-{ flakeConfig, lib, pkgs, ... }:
-
 {
+  flakeConfig,
+  lib,
+  pkgs,
+  ...
+}: {
   home.activation.installAetherShell = with flakeConfig.user; let
     # maybe just to make it more clear ig
     username = name;
@@ -12,7 +15,8 @@
 
       # check if it cloned successfully, it shouldn't fail if so (e.g: no internet)
       if test -d ~/.config/awesome; then
-        chown -R ${username} ~/.config/{aether-shell/awesome}
+        chown -R ${username} ~/.config/aether-shell
+        chown -R ${username} ~/.config/awesome
       fi
     fi
   '';

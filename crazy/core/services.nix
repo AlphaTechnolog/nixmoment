@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  flakeConfig,
   ...
 }: {
   programs = {
@@ -10,10 +11,19 @@
   services = {
     libinput.enable = true;
     openssh.enable = true;
-    displayManager.sddm.enable = true;
 
     xserver = {
       enable = true;
+
+      displayManager = {
+        lightdm.enable = true;
+        defaultSession = "none+awesome";
+
+        autoLogin = {
+          enable = true;
+          user = flakeConfig.user.name;
+        };
+      };
 
       windowManager.awesome = {
         enable = true;

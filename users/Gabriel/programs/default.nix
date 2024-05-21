@@ -6,5 +6,6 @@
     ./x11-misc/picom.nix
     ./net-im/discord.nix
     ./app-editors/vscode
+    ./app-editors/neovim
   ];
 }

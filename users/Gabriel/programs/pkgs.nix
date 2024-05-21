@@ -14,7 +14,6 @@
     maim
     clang
     clang-tools
-    neovim
     file
   ];
 }

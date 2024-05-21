@@ -25,25 +25,30 @@
   # "nixerised", e.g: the awesomewm config (at least yet).
   colorscheme = rec {
     primary = {
-      background = "#131313";
-      foreground = "#b6beca";
+      background = "#17191b";
+      foreground = "#c5c8c6";
+    };
+
+    cursor = {
+      text = primary.background;
+      cursor = "#ffffff";
     };
 
     normal = {
-      black = "#202020";
-      red = "#c6797c";
-      green = "#8cc7a9";
-      yellow = "#dcc89f";
-      blue = "#89a8d2";
-      magenta = "#c29eda";
-      cyan = "#8bb8d2";
-      white = "#e0e1e4";
+      black = "#2f3336";
+      red = "#cc6666";
+      green = "#b5bd68";
+      yellow = "#e6c547";
+      blue = "#81a2be";
+      magenta = "#b294bb";
+      cyan = "#70c0ba";
+      white = "#c5c8c6";
     };
 
     bright =
       normal
       // {
-        black = "#2c2c2c";
+        black = "#666666";
       };
   };
 

@@ -7,6 +7,11 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     cutefetch.url = "github:alphatechnolog/cutefetch";
 
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

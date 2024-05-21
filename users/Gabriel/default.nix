@@ -2,6 +2,7 @@
   flakeConfig,
   lib,
   pkgs,
+  inputs,
   ...
 }: {
   home = with flakeConfig.user; {
@@ -22,6 +23,10 @@
   };
 
   imports = let
+    inputsModules = with inputs; [
+      nixvim.homeManagerModules.nixvim
+    ];
+
     modules = [
       ./programs
       ./shell.nix
@@ -33,5 +38,6 @@
       then []
       else [./aether-shell.nix]
     )
+    ++ inputsModules
     ++ modules;
 }

@@ -4,7 +4,7 @@
 
     settings = {
       font = {
-        size = 10.5;
+        size = 10;
 
         normal = {
           family = "monospace";
@@ -26,15 +26,6 @@
             text = "CellForeground";
           };
         });
-
-      window = let
-        padding = 16;
-      in {
-        padding = {
-          x = padding;
-          y = padding;
-        };
-      };
     };
   };
 }

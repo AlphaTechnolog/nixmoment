@@ -8,7 +8,7 @@
       material-symbols = prev.callPackage ./pkgs/material-symbols.nix {};
 
       nerdfonts = prev.nerdfonts.override {
-        fonts = ["JetBrainsMono" "IosevkaTerm" "Iosevka" "NerdFontsSymbolsOnly"];
+        fonts = ["Hack" "JetBrainsMono" "IosevkaTerm" "Iosevka" "NerdFontsSymbolsOnly"];
       };
     };
 

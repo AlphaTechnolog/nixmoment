@@ -12,18 +12,13 @@
     libinput.enable = true;
     openssh.enable = true;
 
+    displayManager = {
+      sddm.enable = true;
+    };
+
     xserver = {
       enable = true;
-
-      displayManager = {
-        lightdm.enable = true;
-        defaultSession = "none+awesome";
-
-        autoLogin = {
-          enable = true;
-          user = flakeConfig.user.name;
-        };
-      };
+      desktopManager.plasma5.enable = true;
 
       windowManager.awesome = {
         enable = true;

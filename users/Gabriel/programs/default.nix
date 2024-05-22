@@ -1,4 +1,5 @@
 # gentoo packaging convention ftw
+
 {
   imports = [
     ./pkgs.nix
@@ -7,5 +8,6 @@
     ./net-im/discord.nix
     ./app-editors/vscode
     ./app-editors/neovim
+    ./app-misc/tmux.nix
   ];
 }

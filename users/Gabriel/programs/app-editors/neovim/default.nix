@@ -45,9 +45,22 @@
         mode = ["i"];
         options.silent = true;
       }
+
+      {
+        action = ";";
+        key = ":";
+        options.silent = true;
+      }
+
       {
         action = "<cmd>Telescope find_files<cr>";
         key = "<space>ff";
+        options.silent = true;
+      }
+
+      {
+        action = "<cmd>Oil<cr>";
+        key = "-";
         options.silent = true;
       }
     ];
@@ -67,6 +80,23 @@
           "c" "cpp" "rust" "zig" "lua"
           "html" "css" "bash" "python"
         ];
+      };
+
+      oil = {
+        enable = true;
+
+        settings = {
+          columns = ["icon"];
+
+          keymaps = {
+            "<C-h>" = false;
+            "<M-h>" = "actions.select_split";
+          };
+
+          view_options = {
+            show_hidden = true;
+          };
+        };
       };
 
       lsp = {

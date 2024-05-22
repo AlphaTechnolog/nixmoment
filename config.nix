@@ -15,7 +15,7 @@
   modules = {
     homeManager = {
       enable = true;
-      enableAetherShell = true;
+      enableAetherShell = false;
       userConfig = ./users/Gabriel;
     };
   };

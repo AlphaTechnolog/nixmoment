@@ -10,7 +10,7 @@
     playerctl
     psmisc
     htop
-    chromium
+    firefox
     maim
     vlc
     clang

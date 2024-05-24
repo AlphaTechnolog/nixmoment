@@ -12,6 +12,7 @@
     htop
     chromium
     maim
+    vlc
     clang
     clang-tools
     file

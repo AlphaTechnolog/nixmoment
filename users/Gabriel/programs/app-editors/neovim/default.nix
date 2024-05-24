@@ -47,12 +47,6 @@
       }
 
       {
-        action = ";";
-        key = ":";
-        options.silent = true;
-      }
-
-      {
         action = "<cmd>Telescope find_files<cr>";
         key = "<space>ff";
         options.silent = true;
@@ -106,6 +100,10 @@
           tsserver.enable = true;
           lua-ls.enable = true;
           rust-analyzer.enable = true;
+          pyright.enable = true;
+          clangd.enable = true;
+          emmet_ls.enable = true;
+          tailwindcss.enable = true;
         };
       };
 

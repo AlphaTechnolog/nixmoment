@@ -36,7 +36,7 @@
         format = "$directory$git_branch$git_status$nix_shell$character";
 
         directory = {
-          style = "bold cyan";
+          style = "cyan";
           read_only = "";
           read_only_style = "yellow";
           home_symbol = flakeConfig.user.name;
@@ -53,7 +53,7 @@
         };
 
         character = let
-          value = "[|](bold black)";
+          value = "[|](black)";
         in
           {disabled = false;}
           // lib.fold (

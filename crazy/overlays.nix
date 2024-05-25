@@ -20,6 +20,11 @@
         awesome = awesome-luajit-git;
       };
 
+    # packages included at `../repo`
+    monorepoOverlays = _: prev: {
+      fmodstudio = prev.callPackage ../repo/fmodstudio.nix {};
+    };
+
     miscOverlays = _: prev: let
       inherit (prev) system;
       inherit (inputs) cutefetch;
@@ -51,5 +56,6 @@
       awmOverlay
       fontsOverlays
       miscOverlays
+      monorepoOverlays
     ];
 }

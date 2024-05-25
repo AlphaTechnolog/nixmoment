@@ -1,6 +1,9 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    unityhub
+    fmodstudio
     github-cli
+    git-lfs
     slack
     rofi
     pavucontrol
@@ -12,7 +15,6 @@
     htop
     firefox
     maim
-    unityhub
     vlc
     clang
     clang-tools

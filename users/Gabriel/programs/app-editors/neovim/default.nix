@@ -65,6 +65,10 @@
         keymapsSilent = true;
       };
 
+      nvim-colorizer = {
+        enable = true;
+      };
+
       treesitter = {
         enable = true;
         nixvimInjections = true;

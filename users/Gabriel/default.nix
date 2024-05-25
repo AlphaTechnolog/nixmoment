@@ -34,7 +34,7 @@
     ];
   in
     (
-      if !flakeConfig.modules.homeManager.enableAetherShell
+      if !flakeConfig.modules.homeManager.aetherShell.enable
       then []
       else [./aether-shell.nix]
     )

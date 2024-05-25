@@ -5,8 +5,16 @@
   ...
 }: {
   programs = {
+    command-not-found = {
+      enable = true;
+    };
+
     bash = {
       enable = true;
+
+      bashrcExtra = ''
+        source ${pkgs.nix-index}/etc/profile.d/command-not-found.sh
+      '';
 
       shellAliases = let
         eza = lib.getExe pkgs.eza;

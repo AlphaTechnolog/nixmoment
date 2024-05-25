@@ -12,9 +12,11 @@
     htop
     firefox
     maim
+    unityhub
     vlc
     clang
     clang-tools
     file
+    nix-index
   ];
 }

@@ -30,7 +30,6 @@
     modules = [
       ./programs
       ./shell.nix
-      ./gtk.nix
     ];
   in
     (

@@ -10,5 +10,6 @@
     vlc
     file
     nix-index
+    libreoffice-qt6-fresh
   ];
 }

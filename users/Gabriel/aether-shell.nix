@@ -4,6 +4,11 @@
   pkgs,
   ...
 }: {
+  # let custom gtk customization be enabled only when using aether shell
+  imports = [
+    ./gtk.nix
+  ];
+
   home.activation.installAetherShell = with flakeConfig.user; let
     # maybe just to make it more clear ig
     username = name;

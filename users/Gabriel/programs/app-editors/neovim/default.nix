@@ -62,7 +62,6 @@
     plugins = {
       telescope = {
         enable = true;
-        keymapsSilent = true;
       };
 
       nvim-colorizer = {

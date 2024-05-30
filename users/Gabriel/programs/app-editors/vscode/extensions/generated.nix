@@ -56,4 +56,22 @@ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     version = "2.8.0";
     sha256 = "14capk3b7rs105ij4pjz42zsysdfnkwfjk9lj2cawnqxa7b8ygcr";
   }
+  {
+    name = "csdevkit";
+    publisher = "ms-dotnettools";
+    version = "1.7.4";
+    sha256 = "0vhjkxl8gi5m3zrx6354zy1kc31658wy5j3falbmmiyxa441saaq";
+  }
+  {
+    name = "csharp";
+    publisher = "ms-dotnettools";
+    version = "2.32.14";
+    sha256 = "1jiglbiz91da7vnb41k69kik37a1mgiasp490dbj5xdgvp8d0sdg";
+  }
+  {
+    name = "vscode-dotnet-runtime";
+    publisher = "ms-dotnettools";
+    version = "2.0.5";
+    sha256 = "1iflvbadpv19l2fqrdvygymadv1gynaxjfcxqf7xqd6k88szghv9";
+  }
 ]

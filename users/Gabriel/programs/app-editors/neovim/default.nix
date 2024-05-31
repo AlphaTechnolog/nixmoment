@@ -7,15 +7,14 @@
     defaultEditor = true;
     viAlias = true;
 
-    colorscheme = "gruvbox-material";
-
     clipboard = {
       register = "unnamedplus";
     };
 
-    extraPlugins = with pkgs.vimPlugins; [
-      gruvbox-material
-    ];
+    colorschemes.nightfox = {
+      enable = true;
+      flavor = "carbonfox";
+    };
 
     opts = {
       background = "dark";
@@ -24,12 +23,6 @@
       showmode = false;
       shiftwidth = 2;
       expandtab = true;
-    };
-
-    globals = {
-      gruvbox_material_better_performance = 0;
-      gruvbox_material_background = "hard";
-      gruvbox_material_foreground = "material";
     };
 
     extraConfigLua = ''

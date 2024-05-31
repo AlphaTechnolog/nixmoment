@@ -102,11 +102,16 @@
         servers = {
           tsserver.enable = true;
           lua-ls.enable = true;
-          rust-analyzer.enable = true;
           pyright.enable = true;
           clangd.enable = true;
           emmet_ls.enable = true;
           tailwindcss.enable = true;
+
+          rust-analyzer = {
+            enable = true;
+            installCargo = true;
+            installRustc = true;
+          };
         };
       };
 

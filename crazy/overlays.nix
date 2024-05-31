@@ -51,6 +51,7 @@
     [
       inputs.nixpkgs-f2k.overlays.window-managers
       inputs.nixpkgs-f2k.overlays.compositors
+      inputs.webx.overlays.x86_64-linux.default
     ]
     ++ [
       awmOverlay

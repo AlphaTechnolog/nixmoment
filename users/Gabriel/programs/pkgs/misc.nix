@@ -8,5 +8,6 @@
     psmisc
     htop
     maim
+    webx
   ];
 }

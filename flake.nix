@@ -6,6 +6,7 @@
     nixpkgs-f2k.url = "github:moni-dz/nixpkgs-f2k";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     cutefetch.url = "github:alphatechnolog/cutefetch";
+    webx.url = "github:face-hh/webx";
 
     nixvim = {
       url = "github:nix-community/nixvim";

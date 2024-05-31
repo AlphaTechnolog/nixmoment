@@ -24,31 +24,54 @@
   # some of them may not be themeable because they may be not
   # "nixerised", e.g: the awesomewm config (at least yet).
   colorscheme = rec {
+    # colors:
+    #   primary:
+    #     background: '#161616'
+    #     foreground: '#f2f4f8'
+    #   normal:
+    #     black: '#282828'
+    #     red: '#ee5396'
+    #     green: '#25be6a'
+    #     yellow: '#08bdba'
+    #     blue: '#78a9ff'
+    #     magenta: '#be95ff'
+    #     cyan: '#33b1ff'
+    #     white: '#dfdfe0'
+    #   bright:
+    #     black: '#484848'
+    #     red: '#f16da6'
+    #     green: '#46c880'
+    #     yellow: '#2dc7c4'
+    #     blue: '#8cb6ff'
+    #     magenta: '#c8a5ff'
+    #     cyan: '#52bdff'
+    #     white: '#e4e4e5'
+
     primary = {
-      background = "#17191b";
-      foreground = "#c5c8c6";
+      background = "#161616";
+      foreground = "#f2f4f8";
     };
 
     cursor = {
       text = primary.background;
-      cursor = "#ffffff";
+      cursor = "#f2f4f8";
     };
 
     normal = {
-      black = "#2f3336";
-      red = "#cc6666";
-      green = "#b5bd68";
-      yellow = "#e6c547";
-      blue = "#81a2be";
-      magenta = "#b294bb";
-      cyan = "#70c0ba";
-      white = "#c5c8c6";
+      black = "#282828";
+      red = "#ee5396";
+      green = "#25be6a";
+      yellow = "#08bdba";
+      blue = "#78a9ff";
+      magenta = "#be95ff";
+      cyan = "#33b1ff";
+      white = "#dfdfe0";
     };
 
     bright =
       normal
       // {
-        black = "#666666";
+        black = "#484848";
       };
   };
 

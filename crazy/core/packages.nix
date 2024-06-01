@@ -3,6 +3,7 @@
     wget
     git
     dotnet-sdk
+    ntfs3g
   ];
 
   programs.java = {

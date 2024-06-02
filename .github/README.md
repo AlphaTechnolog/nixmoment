@@ -7,6 +7,7 @@
 ![banner-aether.png](./assets/banner-aether.png)
 
 > Aether is the new environment based in awm im ~~slowly~~ making
+
 > *Update*: Im liking more my plasma workspace tbh.
 
 Here's my effort to keep myself on nixos while having a comfy workstation.

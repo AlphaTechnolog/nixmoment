@@ -1,4 +1,4 @@
-{flakeConfig, pkgs, ...}: {
+{ flakeConfig, pkgs, ... }: {
   programs.alacritty = {
     enable = true;
 
@@ -8,10 +8,8 @@
       };
 
       window = let
-        inherit (pkgs) lib;
-        inherit (flakeConfig.modules.homeManager) aetherShell;
         value = 12;
-      in lib.mkIf aetherShell.enable {
+      in {
         padding = {
           x = value;
           y = value;

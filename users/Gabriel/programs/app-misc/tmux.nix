@@ -8,6 +8,9 @@
     keyMode = "vi";
     mouse = true;
     prefix = "C-Space";
-    terminal = "xterm-256color";
+    terminal = "tmux-256color";
+    extraConfig = ''
+      set-option -ga terminal-overrides ",tmux-256color:Tc"
+    '';
   };
 }

@@ -14,6 +14,7 @@
 
       bashrcExtra = ''
         source ${pkgs.nix-index}/etc/profile.d/command-not-found.sh
+        export TERM=tmux-256color
       '';
 
       shellAliases = let
@@ -27,6 +28,7 @@
         cd = "z";
         code = "code --disable-gpu";
         neofetch = "${pkgs.fastfetch}/bin/flashfetch";
+        tmux = "tmux -2";
       };
     };
 

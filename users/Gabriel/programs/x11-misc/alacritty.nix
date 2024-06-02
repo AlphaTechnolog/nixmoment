@@ -3,10 +3,6 @@
     enable = true;
 
     settings = {
-      env = {
-        TERM = "xterm-256color";
-      };
-
       window = let
         value = 12;
       in {

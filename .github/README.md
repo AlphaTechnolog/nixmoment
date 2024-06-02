@@ -76,6 +76,10 @@ nix-shell -p vim --run 'vim config.nix'
 
 > You can change the colorscheme of some apps (it will mostly change aether shell colors when done), and change your hostname, username, etc
 
+> [!IMPORTANT]
+> Disable aether shell options there, check for `<root>.modules.homeManager.aetherShell` since it's a WIP
+> and because the source code is in a private repo atm, it will just cause fails to happen.
+
 ## Building the system
 
 When everything is done, just issue

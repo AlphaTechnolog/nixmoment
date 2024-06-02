@@ -35,7 +35,7 @@ if you use btrfs or whatever else.
 mkfs.xfs -f /dev/sda2 -L NIXOSROOT
 mkfs.fat -F /dev/sda1 -n NIXOSBOOT
 
-mount /dev/diks/by-label/NIXOSROOT /mnt/
+mount /dev/disk/by-label/NIXOSROOT /mnt/
 mount /dev/disk/by-label/NIXOSBOOT /mnt/efi --mkdir
 ```
 

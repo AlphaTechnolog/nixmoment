@@ -39,7 +39,7 @@ mount /dev/disk/by-label/NIXOSROOT /mnt/
 mount /dev/disk/by-label/NIXOSBOOT /mnt/efi --mkdir
 ```
 
-> Yes efi folder is at /efi since i like it to be there, if you wanna change the path, checkout [boot.nix](./crazy/core/boot.nix)
+> Yes efi folder is at /efi since i like it to be there, if you wanna change the path, checkout [boot.nix](../crazy/core/boot.nix)
 
 ### Configuring the config XD
 

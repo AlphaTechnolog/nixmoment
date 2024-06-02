@@ -4,6 +4,7 @@
     pavucontrol
     pfetch
     cutefetch
+    nexusfetch
     playerctl
     psmisc
     htop

@@ -7,6 +7,7 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     cutefetch.url = "github:alphatechnolog/cutefetch";
     webx.url = "github:face-hh/webx";
+    nexusfetch.url = "gitlab:alxhr0/nexusfetch";
 
     nixvim = {
       url = "github:nix-community/nixvim";

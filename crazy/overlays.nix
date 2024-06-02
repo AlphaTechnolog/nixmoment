@@ -27,9 +27,10 @@
 
     miscOverlays = _: prev: let
       inherit (prev) system;
-      inherit (inputs) cutefetch;
+      inherit (inputs) cutefetch nexusfetch;
     in {
       cutefetch = cutefetch.packages.${system}.default;
+      nexusfetch = nexusfetch.packages.${system}.default;
 
       picom-git = prev.picom.overrideAttrs (old: {
         src = inputs.picom-sdhand-src;

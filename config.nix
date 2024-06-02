@@ -33,7 +33,7 @@
   # "nixerised", e.g: the awesomewm config (at least yet).
   colorscheme = rec {
     primary = {
-      background = "#161616";
+      background = "#151515";
       foreground = "#ffffff";
     };
 

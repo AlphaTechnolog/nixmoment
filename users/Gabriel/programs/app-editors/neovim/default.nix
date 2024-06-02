@@ -67,7 +67,7 @@
         ensureInstalled = [
           "javascript" "typescript" "tsx"
           "c" "cpp" "rust" "zig" "lua"
-          "html" "css" "bash" "python"
+          "html" "css" "bash" "python" "nix"
         ];
       };
 

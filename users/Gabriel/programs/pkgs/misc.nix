@@ -5,6 +5,7 @@
     pfetch
     cutefetch
     nexusfetch
+    xclip
     playerctl
     psmisc
     htop

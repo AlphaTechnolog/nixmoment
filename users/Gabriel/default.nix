@@ -35,7 +35,7 @@
     (
       if !flakeConfig.modules.homeManager.aetherShell.enable
       then []
-      else [./aether-shell.nix]
+      else [./aether-shell]
     )
     ++ inputsModules
     ++ modules;

@@ -1,10 +1,21 @@
-{flakeConfig, ...}: {
+{flakeConfig, pkgs, ...}: {
   programs.alacritty = {
     enable = true;
 
     settings = {
       env = {
         TERM = "xterm-256color";
+      };
+
+      window = let
+        inherit (pkgs) lib;
+        inherit (flakeConfig.modules.homeManager) aetherShell;
+        value = 12;
+      in lib.mkIf aetherShell.enable {
+        padding = {
+          x = value;
+          y = value;
+        };
       };
 
       font = {

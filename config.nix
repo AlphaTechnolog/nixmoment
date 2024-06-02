@@ -15,8 +15,16 @@
   modules = {
     homeManager = {
       enable = true;
-      aetherShell.enable = false;
       userConfig = ./users/Gabriel;
+
+      aetherShell = {
+        enable = true;
+
+        # these are the colors to be used in aether shell, by default
+        # it takes the ones at `flakeConfig.colorscheme` but you can override
+        # them all here, first arg is `flakeConfig.colorscheme`
+        colors = colors: colors;
+      };
     };
   };
 
@@ -25,31 +33,30 @@
   # "nixerised", e.g: the awesomewm config (at least yet).
   colorscheme = rec {
     primary = {
-      background = "#141414";
-      foreground = "#f2f4f8";
+      background = "#161616";
+      foreground = "#ffffff";
     };
 
     cursor = {
       text = primary.background;
-      cursor = "#f2f4f8";
+      cursor = "#ffffff";
     };
 
     normal = {
-      black = "#282828";
+      black = "#262626";
+      magenta = "#ff7eb6";
+      green = "#42be65";
+      yellow = "#ffe97b";
+      blue = "#33b1ff";
       red = "#ee5396";
-      green = "#25be6a";
-      yellow = "#08bdba";
-      blue = "#78a9ff";
-      magenta = "#be95ff";
-      cyan = "#33b1ff";
-      white = "#dfdfe0";
+      cyan = "#3ddbd9";
+      white = "#dde1e6";
     };
 
-    bright =
-      normal
-      // {
-        black = "#484848";
-      };
+    bright = normal // {
+      black = "#393939";
+      white = "#ffffff";
+    };
   };
 
   # this is used across all the flake content, defines metadata for the user, such as the name and

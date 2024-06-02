@@ -22,11 +22,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1715122744,
-        "narHash": "sha256-qbbG/0xx+GOEeegtKos7WE55O6bjnXkQsQ5nvXOgbxU=",
+        "lastModified": 1717343746,
+        "narHash": "sha256-MGtjT7lnvZfCaRxqTuEcMpZqEmpgk1qrEYE1PiMGdwM=",
         "owner": "alphatechnolog",
         "repo": "cutefetch",
-        "rev": "afeea37ef208d7c4548d10eb58ef709cc24a1565",
+        "rev": "274f4bfe1ca16b3b179d54ddb811b6ecee621276",
         "type": "github"
       },
       "original": {

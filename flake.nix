@@ -43,11 +43,11 @@
     config = import ./config.nix;
   in
     with config; {
-      nixosConfigurations."${hostname}" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."${hostname}" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
 
         specialArgs = {
-          inherit inputs;
+          inherit inputs system;
           flakeConfig = config;
         };
 

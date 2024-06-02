@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  system,
   ...
 }: {
   nixpkgs.overlays = let
@@ -27,11 +28,7 @@
 
     miscOverlays = _: prev: let
       inherit (prev) system;
-      inherit (inputs) cutefetch nexusfetch;
     in {
-      cutefetch = cutefetch.packages.${system}.default;
-      nexusfetch = nexusfetch.packages.${system}.default;
-
       picom-git = prev.picom.overrideAttrs (old: {
         src = inputs.picom-sdhand-src;
         version = "sdhand-git";
@@ -49,11 +46,13 @@
       };
     };
   in
-    [
-      inputs.nixpkgs-f2k.overlays.window-managers
-      inputs.nixpkgs-f2k.overlays.compositors
-      inputs.webx.overlays.x86_64-linux.default
-    ]
+    (with inputs; [
+      nixpkgs-f2k.overlays.window-managers
+      nixpkgs-f2k.overlays.compositors
+      webx.overlays.${system}.default
+      cutefetch.overlays.${system}.default
+      nexusfetch.overlays.${system}.default
+    ])
     ++ [
       awmOverlay
       fontsOverlays

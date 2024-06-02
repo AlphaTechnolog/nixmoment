@@ -74,7 +74,7 @@ Then adjust your config.nix as your liking
 nix-shell -p vim --run 'vim config.nix'
 ```
 
-> You can change the colorscheme of some apps (it will mostly change aether shell colors when done), and change your hostname, username, etc
+You can change the colorscheme of some apps (it will mostly change aether shell colors when done), and change your hostname, username, etc
 
 > [!IMPORTANT]
 > Disable aether shell options there, check for `<root>.modules.homeManager.aetherShell` since it's a WIP

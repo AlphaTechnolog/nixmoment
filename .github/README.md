@@ -1,5 +1,7 @@
 # Nixmoment
 
+![banner.png](./assets/banner.png)
+
 Here's my effort to keep myself on nixos while having a comfy workstation.
 
 Thing is im primarily using plasma so don't enable aether shell options

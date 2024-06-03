@@ -30,32 +30,31 @@
 
   # define the colorscheme used for the themeable applications
   # some of them may not be themeable because they may be not
-  # "nixerised", e.g: the awesomewm config (at least yet).
+  # "nixerized", e.g: the awesomewm config (at least yet).
   colorscheme = rec {
     primary = {
-      background = "#151515";
-      foreground = "#ffffff";
+      background = "#1b1e28";
+      foreground = "#a6accd";
     };
 
     cursor = {
       text = primary.background;
-      cursor = "#ffffff";
+      cursor = "#a6accd";
     };
 
     normal = {
-      black = "#262626";
-      magenta = "#ff7eb6";
-      green = "#42be65";
-      yellow = "#ffe97b";
-      blue = "#33b1ff";
-      red = "#ee5396";
-      cyan = "#3ddbd9";
-      white = "#dde1e6";
+      black = "#1b1e28";
+      red = "#d0679d";
+      green = "#5de4c7";
+      yellow = "#fffac2";
+      blue = "#89ddff";
+      magenta = "#fcc5e9";
+      cyan = "#add7ff";
+      white = "#ffffff";
     };
 
     bright = normal // {
-      black = "#393939";
-      white = "#ffffff";
+      black = "#a6accd";
     };
   };
 

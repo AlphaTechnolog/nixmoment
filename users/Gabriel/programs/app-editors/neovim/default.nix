@@ -11,11 +11,12 @@
       register = "unnamedplus";
     };
 
-    colorschemes.oxocarbon = {
+    colorschemes.poimandres = {
       enable = true;
     };
 
     opts = {
+      cursorline = true;
       background = "dark";
       number = true;
       tabstop = 2;

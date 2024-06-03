@@ -37,8 +37,8 @@ in {
         scheme = "dark";
 
         accents = {
-          primary = "magenta";
-          secondary = "red";
+          primary = "blue";
+          secondary = "magenta";
         };
 
         colors = let

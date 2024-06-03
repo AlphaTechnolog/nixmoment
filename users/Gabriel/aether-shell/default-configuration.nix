@@ -20,6 +20,16 @@
 in {
   inherit utils;
 
+  autostart = [
+    "bash -c 'pgrep -x pulseaudio || pulseaudio -b'"
+    "bash -c 'pgrep -x picom || picom -b'"
+  ];
+
+  general-behavior = {
+    sloppy_focus = true;
+    num_tags = 6;
+  };
+
   user-likes = {
     modkey = "Mod4";
     navigator = getExe pkgs.firefox;

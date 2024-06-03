@@ -4,6 +4,7 @@
     git-lfs
     slack
     obs-studio
+    chromium
     firefox
     clang
     clang-tools

@@ -12,11 +12,6 @@
         };
       };
 
-      cursor = {
-        style.shape = "Beam";
-        thickness = 1;
-      };
-
       font = {
         size = 10;
 
@@ -28,14 +23,6 @@
         italic = {
           family = "monospace";
           style = "Semibold";
-        };
-
-        offset = {
-          y = 6;
-        };
-
-        glyph_offset = {
-          y = 3;
         };
       };
 

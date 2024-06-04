@@ -11,7 +11,7 @@
       register = "unnamedplus";
     };
 
-    colorschemes.poimandres = {
+    colorschemes.oxocarbon = {
       enable = true;
     };
 

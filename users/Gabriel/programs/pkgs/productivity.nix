@@ -6,6 +6,7 @@
     obs-studio
     chromium
     firefox
+    kdenlive
     clang
     clang-tools
     vlc

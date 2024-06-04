@@ -34,12 +34,10 @@ in {
       };
 
       theme = default-configuration.user-likes.theme // {
-        scheme = "dark";
-
-        accents = {
-          primary = "magenta";
-          secondary = "red";
-        };
+        inherit (flakeConfig.colorscheme)
+          scheme
+          accents
+          ;
 
         colors = let
           inherit (default-configuration.utils) convertConfigThemeToAetherTheme;

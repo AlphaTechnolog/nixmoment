@@ -3,6 +3,16 @@
     enable = true;
 
     settings = {
+      # flakeConfig.colorscheme already follows the alacritty colors spec (mostly).
+      # ignoring some meta info such as `scheme`.
+      colors = with flakeConfig.colorscheme; {
+        inherit
+          primary
+          normal
+          bright
+          ;
+      };
+
       window = let
         value = 12;
       in {
@@ -25,16 +35,6 @@
           style = "Semibold";
         };
       };
-
-      # flakeConfig.colorscheme already follows the alacritty spec (mostly).
-      colors = with flakeConfig;
-        colorscheme
-        // (with colorscheme; {
-          cursor = {
-            cursor = normal.white;
-            text = "CellForeground";
-          };
-        });
     };
   };
 }

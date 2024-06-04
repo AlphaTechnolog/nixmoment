@@ -1,4 +1,6 @@
-{
+# Simple user configuration example.
+
+rec {
   # this is where the configuration of the system will begin at
   # crazy is the default one and serves as an example on how to use all
   # the configs listed in this file.
@@ -28,61 +30,12 @@
     };
   };
 
-  # define the colorscheme used for the themeable applications
-  # some of them may not be themeable because they may be not
-  # "nixerized", e.g: the awesomewm config (at least yet).
-  colorscheme = rec {
-    # colors:
-    #   primary:
-    #     background: "#161616"
-    #     foreground: "#ffffff"
-    #   search:
-    #     matches:
-    #       foreground: CellBackground
-    #       background: '#ee5396'
-    #     footer_bar:
-    #       background: '#262626'
-    #       foreground: '#ffffff'
-    #   normal:
-    #     black: "#262626"
-    #     magenta: "#ff7eb6"
-    #     green: "#42be65"
-    #     yellow: "#ffe97b"
-    #     blue: "#33b1ff"
-    #     red: "#ee5396"
-    #     cyan: "#3ddbd9"
-    #     green: "#42be65"
-    #     yellow: "#ffe97b"
-    #     blue: "#33b1ff"
-    #     red: "#ee5396"
-    #     cyan: "#3ddbd9"
-    #     white: "#ffffff"
+  # select a colorscheme definition from `./colorschemes/*.nix`.
+  metacolorscheme = import ./colorschemes/carbonfox.nix;
 
-    primary = {
-      background = "#161616";
-      foreground = "#ffffff";
-    };
-
-    cursor = {
-      text = primary.background;
-      cursor = "#ffffff";
-    };
-
-    normal = {
-      black = "#262626";
-      red = "#ee5396";
-      green = "#42be65";
-      yellow = "#ffe97b";
-      blue = "#33b1ff";
-      magenta = "#ff7eb6";
-      cyan = "#3ddbd9";
-      white = "#ffffff";
-    };
-
-    bright = normal // {
-      black = "#393939";
-    };
-  };
+  # exports the palette attribute of metacolorscheme to be able to call
+  # the colors from the themeable applications, even the awm one.
+  colorscheme = metacolorscheme.palette;
 
   # this is used across all the flake content, defines metadata for the user, such as the name and
   # the initial password.

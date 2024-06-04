@@ -1,7 +1,8 @@
-{ pkgs, ... }: {
+{ pkgs, flakeConfig, ... }: {
   home.packages = [ pkgs.wl-clipboard-rs ];
 
-  programs.nixvim = {
+  # loading neovim theme definition from the choosen theme.
+  programs.nixvim = flakeConfig.metacolorscheme.neovim // {
     enable = true;
     enableMan = false;
     defaultEditor = true;
@@ -11,12 +12,7 @@
       register = "unnamedplus";
     };
 
-    colorschemes.oxocarbon = {
-      enable = true;
-    };
-
     opts = {
-      cursorline = true;
       background = "dark";
       number = true;
       tabstop = 2;

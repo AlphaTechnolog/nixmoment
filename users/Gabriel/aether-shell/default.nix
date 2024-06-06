@@ -23,16 +23,6 @@ in {
     inherit (aetherShell) enable;
 
     user-likes = default-configuration.user-likes // {
-      wallpaper = default-configuration.user-likes.wallpaper // {
-        rounded_corners = {
-          top_left = true;
-          top_right = true;
-          bottom_left = false;
-          bottom_right = false;
-          roundness = 12;
-        };
-      };
-
       theme = default-configuration.user-likes.theme // {
         inherit (flakeConfig.colorscheme)
           scheme

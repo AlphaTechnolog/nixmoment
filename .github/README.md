@@ -10,8 +10,8 @@
 
 Here's my effort to keep myself on nixos while having a comfy workstation.
 
-Thing is im primarily using plasma so don't enable aether shell options
-yet since it's a work in progress and won't work cuz it's a private repo.
+I'm currently daily driving Aether Shell, but it's still at a pretty much
+testing phase, so go with caution if you enable it.
 
 The objectives of this config is to get myself in an environment that
 contains all the software i need and that installs all the bloatware i need
@@ -76,7 +76,7 @@ You can change the colorscheme of some apps (it will mostly change aether shell 
 
 > [!IMPORTANT]
 > Disable aether shell options there, check for `<root>.modules.homeManager.aetherShell` since it's a WIP
-> and because the source code is in a private repo atm, it will just cause fails to happen.
+> the source code has been made public pretty much recently! so still dont enable it till i test it further.
 
 ## Building the system
 

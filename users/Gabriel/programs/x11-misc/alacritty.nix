@@ -13,6 +13,10 @@
           ;
       };
 
+      cursor = {
+        style.shape = "Beam";
+      };
+
       window = let
         value = 12;
       in {

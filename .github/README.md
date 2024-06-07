@@ -10,9 +10,6 @@
 
 Here's my effort to keep myself on nixos while having a comfy workstation.
 
-I'm currently daily driving Aether Shell, but it's still at a pretty much
-testing phase, so go with caution if you enable it.
-
 The objectives of this config is to get myself in an environment that
 contains all the software i need and that installs all the bloatware i need
 in a declarative way.
@@ -74,10 +71,6 @@ nix-shell -p vim --run 'vim config.nix'
 
 You can change the colorscheme of some apps (it will mostly change aether shell colors when done), and change your hostname, username, etc
 
-> [!IMPORTANT]
-> Disable aether shell options there, check for `<root>.modules.homeManager.aetherShell` since it's a WIP
-> the source code has been made public pretty much recently! so still dont enable it till i test it further.
-
 ## Building the system
 
 When everything is done, just issue
@@ -90,3 +83,8 @@ nixos-install --root /mnt --flake '.#crazy'
 
 Then just reboot on your system, another rebuild may be needed if you want it to recognise your windows installation or something.
 At least that happened to me.
+
+> [!TIP]
+> You may have to, first, enter KDE Plasma environment, and from there, run
+> `sudo systemctl restart home-manager-<Username-Here>.service`, so it starts cloning aether shell!
+> This may be needed only the first time you start the system.

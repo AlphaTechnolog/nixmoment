@@ -27,6 +27,7 @@ in {
 
   general-behavior = {
     sloppy_focus = true;
+    tag_icons = [ "" "" "" "" "" "" ];
     num_tags = 6;
   };
 

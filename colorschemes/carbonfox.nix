@@ -1,5 +1,5 @@
 {
-  neovim = {
+  neovim = pkgs: {
     colorschemes.nightfox = {
       enable = true;
       flavor = "carbonfox";

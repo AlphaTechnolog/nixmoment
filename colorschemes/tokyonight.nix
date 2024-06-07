@@ -1,5 +1,5 @@
 {
-  neovim = {
+  neovim = pkgs: {
     colorschemes.tokyonight = {
       enable = true;
       settings.style = "night";

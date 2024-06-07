@@ -1,16 +1,25 @@
-{pkgs, ...}: {
+{ pkgs, flakeConfig, ... }: {
   home.file.".icons/default".source = "${pkgs.apple-cursor}/share/icons/macOS-BigSur";
 
-  gtk = {
+  gtk = let
+    inherit (flakeConfig) colorscheme;
+
+    for_scheme = light: dark: (
+      if colorscheme.scheme == "light" then
+        light
+      else
+        dark
+    );
+  in {
     enable = true;
 
     theme = {
-      name = "Materia-dark";
+      name = for_scheme "Materia" "Materia-Dark";
       package = pkgs.materia-theme;
     };
 
     iconTheme = {
-      name = "Papirus";
+      name = for_scheme "Papirus" "Papirus-Dark";
       package = pkgs.papirus-icon-theme;
     };
 

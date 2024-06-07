@@ -34,21 +34,39 @@
 
     keymaps = [
       {
-        action = "<esc>";
         key = "jk";
+        action = "<esc>";
         mode = ["i"];
         options.silent = true;
       }
 
       {
-        action = "<cmd>Telescope find_files<cr>";
         key = "<space>ff";
+        action = "<cmd>Telescope find_files<cr>";
         options.silent = true;
       }
 
       {
-        action = "<cmd>Oil<cr>";
         key = "-";
+        action = "<cmd>Oil<cr>";
+        options.silent = true;
+      }
+
+      {
+        key = "<Tab>";
+        action = "<cmd>bn!<cr>";
+        options.silent = true;
+      }
+
+      {
+        key = "<S-Tab>";
+        action = "<cmd>bp!<cr>";
+        options.silent = true;
+      }
+
+      {
+        key = "<space>x";
+        action = "<cmd>bd!<cr>";
         options.silent = true;
       }
     ];

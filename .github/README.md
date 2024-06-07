@@ -86,7 +86,5 @@ At least that happened to me.
 
 > [!TIP]
 > You may have to, first, enter KDE Plasma environment, and from there, run
-
 > `sudo systemctl restart home-manager-<Username-Here>.service`, so it starts cloning aether shell!
-
 > This may be needed only the first time you start the system.

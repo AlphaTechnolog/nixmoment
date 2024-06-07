@@ -116,7 +116,7 @@
           lua-ls.enable = true;
           pyright.enable = true;
           clangd.enable = true;
-          emmet_ls.enable = true;
+          emmet-ls.enable = true;
           tailwindcss.enable = true;
 
           rust-analyzer = {

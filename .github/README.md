@@ -63,7 +63,7 @@ git lfs pull
 So now you can generate the hardware info
 
 ```sh
-nixos-generate-config --show-hardware-config > misc/hardware-configuration.nix
+nixos-generate-config --root /mnt --show-hardware-config > misc/hardware-configuration.nix
 ```
 
 Then adjust your config.nix as your liking

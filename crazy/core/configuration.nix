@@ -2,6 +2,7 @@
   imports = [
     ./boot.nix
     ./env.nix
+    ./opengl.nix
     ./networking.nix
     ./services.nix
     ./sound.nix

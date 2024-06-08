@@ -25,7 +25,7 @@
   imports = let
     inputsModules = with inputs; [
       nixvim.homeManagerModules.nixvim
-      aether-shell.homeManagerModules.x86_64-linux.aetherShell
+      aether-shell.homeManagerModules.aetherShell
     ];
 
     modules = [

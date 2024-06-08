@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1717868205,
-        "narHash": "sha256-XIWx4chK43/znNIOuPJX3jaiC3OP4EiA2O+SXUVbl8g=",
+        "lastModified": 1717871060,
+        "narHash": "sha256-SLIys9swewf8BRp1Yd/yVu89jEN9CtAV+IgjqUf2AA0=",
         "owner": "alphatechnolog",
         "repo": "aether-shell",
-        "rev": "fde5185fe5222a825a910750bb4c67270870b893",
+        "rev": "f85889ba9bd8a2ab6aebb178606fd3c55504846c",
         "type": "github"
       },
       "original": {

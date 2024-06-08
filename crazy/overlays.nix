@@ -6,8 +6,6 @@
 }: {
   nixpkgs.overlays = let
     fontsOverlays = _: prev: {
-      material-symbols = prev.callPackage ./pkgs/material-symbols.nix {};
-
       nerdfonts = prev.nerdfonts.override {
         fonts = ["Hack" "JetBrainsMono" "IosevkaTerm" "Iosevka" "NerdFontsSymbolsOnly"];
       };

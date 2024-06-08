@@ -1,4 +1,6 @@
 {
+  wallpaper = ./wallpapers/dawnfox.png;
+
   neovim = pkgs: {
     colorschemes.nightfox = {
       enable = true;

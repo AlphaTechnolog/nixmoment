@@ -1,4 +1,6 @@
 {
+  wallpaper = ./wallpapers/tokyonight.png;
+
   neovim = pkgs: {
     colorschemes.tokyonight = {
       enable = true;

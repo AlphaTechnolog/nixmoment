@@ -32,8 +32,6 @@
 
     packages = with pkgs; [
       inter
-      roboto
-      material-symbols
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji

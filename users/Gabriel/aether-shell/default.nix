@@ -4,35 +4,48 @@
   pkgs,
   ...
 }: let
-  inherit (flakeConfig.modules.homeManager) aetherShell;
+  aetherShellCfg = flakeConfig.modules.homeManager.aetherShell;
 
-  # im using here default-configuration in order to be able to override
-  # only certain parts of the configurations definitions rather than the
-  # whole configuration object.
-  default-configuration = import ./default-configuration.nix {
-    inherit flakeConfig lib pkgs;
-  };
+  convertConfigThemeToAetherTheme = theme: (with theme; {
+    inherit (primary)
+      background
+      foreground
+    ;
+
+    hovered_black = bright.black;
+
+    inherit (normal)
+      black
+      red
+      green
+      yellow
+      blue
+      cyan
+      magenta
+      white
+    ;
+  });
 in {
   imports = [
     ./gtk.nix
-    ./module.nix
   ];
 
-  # defines the configuration for the aether shell module
-  programs.aether-shell = {
-    inherit (aetherShell) enable;
+  programs.aetherShell = {
+    enable = true;
 
-    user-likes = default-configuration.user-likes // {
-      theme = default-configuration.user-likes.theme // {
-        inherit (flakeConfig.colorscheme)
+    user-likes = {
+      wallpaper.filename = flakeConfig.metacolorscheme.wallpaper;
+
+      theme = let
+        colors = flakeConfig.colorscheme;
+        computedColors = aetherShellCfg.colors colors;
+      in {
+        colors = convertConfigThemeToAetherTheme computedColors;
+
+        inherit (computedColors)
           scheme
           accents
-          ;
-
-        colors = let
-          inherit (default-configuration.utils) convertConfigThemeToAetherTheme;
-          colors = aetherShell.colors flakeConfig.colorscheme;
-        in convertConfigThemeToAetherTheme colors;
+        ;
       };
     };
   };

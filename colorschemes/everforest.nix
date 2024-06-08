@@ -1,4 +1,6 @@
 {
+  wallpaper = ./wallpapers/everforest.png;
+
   neovim = pkgs: {
     extraPlugins = [pkgs.vimPlugins.everforest];
 

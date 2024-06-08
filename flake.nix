@@ -8,6 +8,7 @@
     cutefetch.url = "github:alphatechnolog/cutefetch";
     webx.url = "github:face-hh/webx";
     nexusfetch.url = "gitlab:alxhr0/nexusfetch";
+    aether-shell.url = "github:alphatechnolog/aether-shell";
 
     nixvim = {
       url = "github:nix-community/nixvim";

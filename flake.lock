@@ -14,7 +14,6 @@
       },
       "original": {
         "owner": "alphatechnolog",
-        "ref": "feature/nix",
         "repo": "aether-shell",
         "type": "github"
       }

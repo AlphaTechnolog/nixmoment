@@ -11,20 +11,18 @@
 Here's my effort to keep myself on nixos while having a comfy workstation.
 
 The objectives of this config is to get myself in an environment that
-contains all the software i need and that installs all the bloatware i need
-in a declarative way.
+contains all the bloatware i need, installed and managed in a declarative way.
 
 ## Installation
 
-This config comes with some special file such as `<root>/config.nix` which specifies a little
-bit of ~~tracking~~ information about you, such as your username, your ofc secure password, etc.
+This config comes with a special file, config.nix, located at `<root>/config.nix` which specifies a little
+bit of ~~tracking~~ information about you, such as your username, your ofc secure password, etc. These are used to be able to primarily, change the username without dying in the attempt, thing is that it doesn't only works for the username but also works for the hostname, timezone, and some little specific values about each user.
 
-so keep an eye of it if you want, the defaults should work, but will setup my username.
+so keep an eye on it, the defaults should work, but will setup my username, hostname, etc.
 
 ### Formatting the disks
 
-you can use xfs if you want, it's my fav so imma put instructions here, but it shouldn't matter
-if you use btrfs or whatever else.
+You can use xfs if you want, it's my fav so imma put instructions here, but it shouldn't matter if you use btrfs or whatever else.
 
 ```sh
 mkfs.xfs -f /dev/sda2 -L NIXOSROOT
@@ -36,7 +34,7 @@ mount /dev/disk/by-label/NIXOSBOOT /mnt/efi --mkdir
 
 > Yes efi folder is at /efi since i like it to be there, if you wanna change the path, checkout [boot.nix](../crazy/core/boot.nix)
 
-### Configuring the config XD
+### Getting started
 
 So now you can start cloning the config and generating the hardware configuration files, example:
 
@@ -46,7 +44,7 @@ mkdir -pv /mnt/home/<yourusernamehere>/
 # installs git and git lfs temporarily
 nix-shell -p git{,-lfs}
 
-# yes it's .crazy
+# yes it's called .crazy (cuz I liked it)
 git clone https://github.com/alphatechnolog/nixmoment.git --recurse-submodules /mnt/home/<yourusernamehere>/.crazy
 
 # !$ means the path
@@ -69,7 +67,7 @@ Then adjust your config.nix as your liking
 nix-shell -p vim --run 'vim config.nix'
 ```
 
-You can change the colorscheme of some apps (it will mostly change aether shell colors when done), and change your hostname, username, etc
+You can change the colorscheme of some apps (it will mostly change aether shell colors, and alacrity colors), also change your hostname, username, etc
 
 ## Building the system
 
@@ -79,10 +77,9 @@ When everything is done, just issue
 nixos-install --root /mnt --flake '.#crazy'
 ```
 
-> Report if you get some errors, cuz i could have forgotten some step lmao
+> Report if you get some errors, cuz i might have forgotten some step lmao
 
-Then just reboot on your system, another rebuild may be needed if you want it to recognise your windows installation or something.
-At least that happened to me.
+Then just reboot into the system. Please note that another rebuild may be needed if you want it to recognise your windows installation or something, at least that's what happened to me.
 
 > [!TIP]
 > You may have to, first, enter KDE Plasma environment, and from there, run

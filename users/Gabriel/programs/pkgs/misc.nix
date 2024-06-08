@@ -5,7 +5,6 @@
     pfetch
     cutefetch
     nexusfetch
-    playerctl
     psmisc
     htop
     maim

@@ -88,3 +88,15 @@ At least that happened to me.
 > You may have to, first, enter KDE Plasma environment, and from there, run
 > `sudo systemctl restart home-manager-<Username-Here>.service`, so it starts cloning aether shell!
 > This may be needed only the first time you start the system.
+
+## What's next?
+
+Welp, docs about how the config works and how to use it as a "get started" to NixOS, is
+a WIP, and i'm still preparing it... thing is you could try checking for config files
+in order to add your own packages, learn about overlays, etc. In this config, i've already
+created files for every of those things (suited to my needs but still trying to organize them all).
+
+> [!TIP]
+> This setup uses [nh](https://github.com/viperML/nh) to build the nix config.
+> So you can just use `nh os switch` in any cwd, and it will look for
+> `/home/<user>/.<hostname>` in order to start building the config!

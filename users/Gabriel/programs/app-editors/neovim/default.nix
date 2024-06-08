@@ -154,7 +154,10 @@
     };
   };
 in {
-  home.packages = [ pkgs.wl-clipboard-rs ];
+  home.packages = with pkgs; [
+    wl-clipboard-rs
+    xclip
+  ];
 
   # loading neovim theme definition from the choosen theme.
   programs.nixvim = lib.mkMerge [

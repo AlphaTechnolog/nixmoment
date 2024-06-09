@@ -3,6 +3,7 @@
     wget
     git
     dotnet-sdk
+    libnotify
     ntfs3g
   ];
 

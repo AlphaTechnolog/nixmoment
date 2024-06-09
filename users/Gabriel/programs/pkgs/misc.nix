@@ -9,5 +9,6 @@
     htop
     maim
     webx
+    spotify
   ];
 }

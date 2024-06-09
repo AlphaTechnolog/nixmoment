@@ -17,8 +17,8 @@
     scheme = "dark";
 
     accents = {
-      primary = "green";
-      secondary = "cyan";
+      primary = "cyan";
+      secondary = "green";
     };
 
     primary = {

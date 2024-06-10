@@ -1,6 +1,6 @@
 # Nixmoment
 
-## Aether shell version
+## [Aether Shell](https://github.com/alphatechnolog/aether-shell) version
 ![banner-aether.png](./assets/banner-aether.png)
 
 ## Plasma version

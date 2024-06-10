@@ -14,6 +14,7 @@
 
       bashrcExtra = ''
         source ${pkgs.nix-index}/etc/profile.d/command-not-found.sh
+        printf '\033[6 q'
         export TERM=tmux-256color
       '';
 

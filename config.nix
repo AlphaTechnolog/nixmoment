@@ -23,7 +23,7 @@ rec {
       # disable if per example you're gonna use gnome as main
       # desktop environment
       gtk = {
-        enable = false;
+        enable = true;
       };
 
       aetherShell = {
@@ -38,7 +38,7 @@ rec {
   };
 
   # select a colorscheme definition from `./colorschemes/*.nix`.
-  metacolorscheme = import ./colorschemes/gruvbox-material.nix;
+  metacolorscheme = import ./colorschemes/base16-default-dark.nix;
 
   # exports the palette attribute of metacolorscheme to be able to call
   # the colors from the themeable applications, even the awm one.

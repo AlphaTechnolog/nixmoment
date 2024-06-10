@@ -7,7 +7,7 @@
 
     globals = {
       gruvbox_material_better_performance = 0;
-      gruvbox_material_foreground = "mix";
+      gruvbox_material_foreground = "material";
       gruvbox_material_background = "hard";
     };
   };

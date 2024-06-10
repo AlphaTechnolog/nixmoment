@@ -26,10 +26,6 @@
     ;
   });
 in {
-  imports = [
-    ./gtk.nix
-  ];
-
   programs.aetherShell = {
     enable = true;
 

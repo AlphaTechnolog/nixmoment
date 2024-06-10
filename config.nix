@@ -19,6 +19,13 @@ rec {
       enable = true;
       userConfig = ./users/Gabriel;
 
+      # wether or not i should enable gtk configurations
+      # disable if per example you're gonna use gnome as main
+      # desktop environment
+      gtk = {
+        enable = false;
+      };
+
       aetherShell = {
         enable = true;
 
@@ -31,7 +38,7 @@ rec {
   };
 
   # select a colorscheme definition from `./colorschemes/*.nix`.
-  metacolorscheme = import ./colorschemes/dawnfox.nix;
+  metacolorscheme = import ./colorschemes/carbonfox.nix;
 
   # exports the palette attribute of metacolorscheme to be able to call
   # the colors from the themeable applications, even the awm one.

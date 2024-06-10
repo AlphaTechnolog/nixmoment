@@ -32,12 +32,26 @@
       ./programs
       ./shell.nix
     ];
-  in
-    (
-      if !flakeConfig.modules.homeManager.aetherShell.enable
+
+    inherit (flakeConfig.modules.homeManager)
+      gtk
+      aetherShell
+    ;
+
+    aetherShellModule = (
+      if !aetherShell.enable
       then []
       else [./aether-shell]
-    )
+    );
+
+    gtkModule = (
+      if !gtk.enable
+      then []
+      else [./gtk.nix]
+    );
+  in []
+    ++ aetherShellModule
+    ++ gtkModule
     ++ inputsModules
     ++ modules;
 }

@@ -17,8 +17,15 @@
         style.shape = "Beam";
       };
 
+      window = {
+        padding = {
+          x = 12;
+          y = 12;
+        };
+      };
+
       font = {
-        size = 9;
+        size = 10;
 
         normal = {
           family = "monospace";

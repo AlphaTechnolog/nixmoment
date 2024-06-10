@@ -31,7 +31,7 @@ rec {
   };
 
   # select a colorscheme definition from `./colorschemes/*.nix`.
-  metacolorscheme = import ./colorschemes/everforest.nix;
+  metacolorscheme = import ./colorschemes/dawnfox.nix;
 
   # exports the palette attribute of metacolorscheme to be able to call
   # the colors from the themeable applications, even the awm one.

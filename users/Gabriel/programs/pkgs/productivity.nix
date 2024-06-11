@@ -6,6 +6,7 @@
     obs-studio
     chromium
     firefox
+    telegram-desktop
     kdenlive
     clang
     clang-tools

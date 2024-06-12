@@ -38,7 +38,7 @@ rec {
   };
 
   # select a colorscheme definition from `./colorschemes/*.nix`.
-  metacolorscheme = import ./colorschemes/base16-default-dark.nix;
+  metacolorscheme = import ./colorschemes/tokyoday.nix;
 
   # exports the palette attribute of metacolorscheme to be able to call
   # the colors from the themeable applications, even the awm one.

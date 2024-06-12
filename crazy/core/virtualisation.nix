@@ -26,4 +26,27 @@
       };
     };
   };
+
+  virtualisation.vmVariant = {
+    virtualisation = {
+      memorySize = 8048;
+      cores = 2;
+      graphics = false;
+    };
+  };
+
+  users = {
+    groups.virt = {};
+
+    users.virt = {
+      isNormalUser = true;
+      extraGroups = ["wheel"];
+      password = "virt";
+      group = "virt";
+    };
+  };
+
+  networking.firewall = {
+    allowedTCPPorts = [22];
+  };
 }

@@ -1,5 +1,4 @@
 # Simple user configuration example.
-
 rec {
   # this is where the configuration of the system will begin at
   # crazy is the default one and serves as an example on how to use all
@@ -23,7 +22,7 @@ rec {
       # disable if per example you're gonna use gnome as main
       # desktop environment
       gtk = {
-        enable = false;
+        enable = true;
       };
 
       aetherShell = {

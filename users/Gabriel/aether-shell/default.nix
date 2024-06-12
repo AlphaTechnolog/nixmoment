@@ -1,20 +1,21 @@
 {
   flakeConfig,
   lib,
-  pkgs,
   ...
 }: let
   aetherShellCfg = flakeConfig.modules.homeManager.aetherShell;
 
   convertConfigThemeToAetherTheme = theme: (with theme; {
-    inherit (primary)
+    inherit
+      (primary)
       background
       foreground
-    ;
+      ;
 
     hovered_black = bright.black;
 
-    inherit (normal)
+    inherit
+      (normal)
       black
       red
       green
@@ -23,14 +24,22 @@
       cyan
       magenta
       white
-    ;
+      ;
   });
 in {
   programs.aetherShell = {
     enable = true;
 
     user-likes = {
-      wallpaper.filename = flakeConfig.metacolorscheme.wallpaper;
+      wallpaper = {
+        filename = flakeConfig.metacolorscheme.wallpaper;
+
+        # disable top rounded corners if in light mode
+        rounded_corners = lib.mkIf (flakeConfig.colorscheme.scheme == "light") {
+          top_left = false;
+          top_right = false;
+        };
+      };
 
       theme = let
         colors = flakeConfig.colorscheme;
@@ -38,10 +47,11 @@ in {
       in {
         colors = convertConfigThemeToAetherTheme computedColors;
 
-        inherit (computedColors)
+        inherit
+          (computedColors)
           scheme
           accents
-        ;
+          ;
       };
     };
   };

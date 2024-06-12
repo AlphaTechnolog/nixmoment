@@ -1,4 +1,4 @@
-{ flakeConfig, pkgs, ... }: {
+{flakeConfig, ...}: {
   programs.alacritty = {
     enable = true;
 

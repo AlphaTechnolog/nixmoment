@@ -67,6 +67,9 @@ Then adjust your config.nix as your liking
 nix-shell -p vim --run 'vim config.nix'
 ```
 
+> [!NOTE]
+> You may need to run `git add -A` before rebuilding to make nix recognise changes
+
 You can change the colorscheme of some apps (it will mostly change aether shell colors, and alacrity colors), also change your hostname, username, etc
 
 ## Building the system

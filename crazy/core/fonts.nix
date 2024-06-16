@@ -8,7 +8,7 @@
 
       defaultFonts = {
         emoji = ["Noto Color Emoji"];
-        monospace = ["Hack Nerd Font" "JetBrains Nerd Font" "Iosevka Nerd Font" "Noto Color Emoji"];
+        monospace = ["JetBrainsMono Nerd Font" "Hack Nerd Font" "Iosevka Nerd Font" "Noto Color Emoji"];
         serif = ["Noto Serif" "Noto Color Emoji"];
         sansSerif = ["Inter" "Noto Color Emoji"];
       };

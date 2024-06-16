@@ -16,7 +16,7 @@ rec {
   modules = {
     homeManager = {
       enable = true;
-      userConfig = ./users/Gabriel;
+      userConfig = ./users/Alpha;
 
       # wether or not i should enable gtk configurations
       # disable if per example you're gonna use gnome as main
@@ -31,13 +31,13 @@ rec {
         # these are the colors to be used in aether shell, by default
         # it takes the ones at `flakeConfig.colorscheme` but you can override
         # them all here, first arg is `flakeConfig.colorscheme`
-        colors = colors: colors;
+        colors = _: (import ./colorschemes/tokyoday.nix).palette;
       };
     };
   };
 
   # select a colorscheme definition from `./colorschemes/*.nix`.
-  metacolorscheme = import ./colorschemes/tokyoday.nix;
+  metacolorscheme = import ./colorschemes/tokyonight.nix;
 
   # exports the palette attribute of metacolorscheme to be able to call
   # the colors from the themeable applications, even the awm one.
@@ -46,7 +46,7 @@ rec {
   # this is used across all the flake content, defines metadata for the user, such as the name and
   # the initial password.
   user = {
-    name = "Gabriel";
+    name = "Alpha";
 
     # the securest password in the world fr
     initialPassword = "alpha123.";

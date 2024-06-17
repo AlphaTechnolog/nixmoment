@@ -31,7 +31,7 @@ rec {
         # these are the colors to be used in aether shell, by default
         # it takes the ones at `flakeConfig.colorscheme` but you can override
         # them all here, first arg is `flakeConfig.colorscheme`
-        colors = _: (import ./colorschemes/tokyoday.nix).palette;
+        colors = colors: colors;
       };
     };
   };

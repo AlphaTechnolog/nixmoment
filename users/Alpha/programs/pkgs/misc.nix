@@ -10,5 +10,6 @@
     maim
     webx
     spotify
+    desmume
   ];
 }

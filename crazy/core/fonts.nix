@@ -8,7 +8,7 @@
 
       defaultFonts = {
         emoji = ["Noto Color Emoji"];
-        monospace = ["JetBrainsMono Nerd Font" "Hack Nerd Font" "Iosevka Nerd Font" "Noto Color Emoji"];
+        monospace = ["Maple Mono NF" "JetBrainsMono Nerd Font" "Hack Nerd Font" "Iosevka Nerd Font" "Noto Color Emoji"];
         serif = ["Noto Serif" "Noto Color Emoji"];
         sansSerif = ["Inter" "Noto Color Emoji"];
       };
@@ -32,6 +32,7 @@
 
     packages = with pkgs; [
       inter
+      maple-mono-NF
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji

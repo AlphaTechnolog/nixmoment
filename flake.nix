@@ -9,6 +9,7 @@
     webx.url = "github:face-hh/webx";
     nexusfetch.url = "gitlab:alxhr0/nexusfetch";
     aether-shell.url = "github:alphatechnolog/aether-shell";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
     nixvim = {
       url = "github:nix-community/nixvim";

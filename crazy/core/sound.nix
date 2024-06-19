@@ -1,8 +1,11 @@
-{pkgs, ...}: {
-  sound.enable = true;
+{
+  security.rtkit.enable = true;
 
-  hardware.pulseaudio = {
+  services.pipewire = {
     enable = true;
-    package = pkgs.pulseaudioFull;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
   };
 }

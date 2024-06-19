@@ -1,11 +1,11 @@
 {
   lib,
   pkgs,
-  flakeConfig,
   ...
 }: {
   programs = {
     dconf.enable = true;
+    hyprland.enable = true; # enable system level hyprland settings.
   };
 
   services = {

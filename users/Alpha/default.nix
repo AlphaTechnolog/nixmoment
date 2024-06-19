@@ -1,7 +1,5 @@
 {
   flakeConfig,
-  lib,
-  pkgs,
   inputs,
   ...
 }: {
@@ -26,17 +24,20 @@
     inputsModules = with inputs; [
       nixvim.homeManagerModules.nixvim
       aether-shell.homeManagerModules.aetherShell
+      hyprland.homeManagerModules.default
     ];
 
     modules = [
       ./programs
+      ./desktop
       ./shell.nix
     ];
 
-    inherit (flakeConfig.modules.homeManager)
+    inherit
+      (flakeConfig.modules.homeManager)
       gtk
       aetherShell
-    ;
+      ;
 
     aetherShellModule = (
       if !aetherShell.enable
@@ -49,7 +50,8 @@
       then []
       else [./gtk.nix]
     );
-  in []
+  in
+    []
     ++ aetherShellModule
     ++ gtkModule
     ++ inputsModules

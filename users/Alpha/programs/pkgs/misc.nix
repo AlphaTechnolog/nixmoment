@@ -10,6 +10,7 @@
     maim
     webx
     spotify
+    feh
     desmume
   ];
 }

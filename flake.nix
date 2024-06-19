@@ -10,6 +10,7 @@
     nexusfetch.url = "gitlab:alxhr0/nexusfetch";
     aether-shell.url = "github:alphatechnolog/aether-shell";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    ags.url = "github:Aylur/ags";
 
     nixvim = {
       url = "github:nix-community/nixvim";

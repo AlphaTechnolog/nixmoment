@@ -25,6 +25,7 @@
       nixvim.homeManagerModules.nixvim
       aether-shell.homeManagerModules.aetherShell
       hyprland.homeManagerModules.default
+      ags.homeManagerModules.default
     ];
 
     modules = [

@@ -45,8 +45,4 @@
       group = "virt";
     };
   };
-
-  networking.firewall = {
-    allowedTCPPorts = [22];
-  };
 }

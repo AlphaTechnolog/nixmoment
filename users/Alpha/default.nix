@@ -43,7 +43,7 @@
     aetherShellModule = (
       if !aetherShell.enable
       then []
-      else [./aether-shell]
+      else [./desktop/aether-shell]
     );
 
     gtkModule = (

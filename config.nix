@@ -37,7 +37,7 @@ rec {
   };
 
   # select a colorscheme definition from `./colorschemes/*.nix`.
-  metacolorscheme = import ./colorschemes/darker-ashes.nix;
+  metacolorscheme = import ./colorschemes/carbonfox.nix;
 
   # exports the palette attribute of metacolorscheme to be able to call
   # the colors from the themeable applications, even the awm one.

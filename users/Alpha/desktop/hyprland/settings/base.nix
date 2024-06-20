@@ -11,10 +11,6 @@
 
     master.no_gaps_when_only = 1;
 
-    dwindle = {
-      no_gaps_when_only = 1;
-    };
-
     general = let
       gaps = 4;
       removeHash = colour: lib.replaceStrings ["#"] [""] colour;

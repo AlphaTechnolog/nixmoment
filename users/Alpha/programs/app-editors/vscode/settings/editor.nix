@@ -1,8 +1,8 @@
 {
   "editor.fontFamily" = "monospace";
   "editor.fontWeight" = "500";
-  "editor.fontSize" = 17;
-  "editor.lineHeight" = 19;
+  "editor.fontSize" = 18;
+  "editor.lineHeight" = 20;
   "editor.tabSize" = 2;
   "editor.fontLigatures" = true;
   "editor.formatOnSave" = true;

@@ -22,7 +22,7 @@ rec {
       # disable if per example you're gonna use gnome as main
       # desktop environment
       gtk = {
-        enable = true;
+        enable = false;
       };
 
       aetherShell = {

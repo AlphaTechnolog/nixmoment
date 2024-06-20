@@ -25,7 +25,7 @@
       };
 
       font = {
-        size = 11;
+        size = 12;
         offset.y = -2;
         glyph_offset.y = -1;
 

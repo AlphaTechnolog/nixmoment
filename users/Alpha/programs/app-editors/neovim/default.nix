@@ -10,7 +10,7 @@
     };
 
     opts = {
-      background = "dark";
+      background = lib.mkDefault "dark";
       number = true;
       tabstop = 2;
       showmode = false;

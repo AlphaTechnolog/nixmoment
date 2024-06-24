@@ -25,9 +25,9 @@
       };
 
       font = {
-        size = 11;
-        offset.y = -2;
-        glyph_offset.y = -1;
+        size = 10.5;
+        offset.y = 4;
+        glyph_offset.y = 2;
 
         normal = {
           family = "monospace";

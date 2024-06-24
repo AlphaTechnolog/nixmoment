@@ -1,5 +1,9 @@
-{ lib, pkgs, flakeConfig, ... }:
-
+{
+  lib,
+  pkgs,
+  flakeConfig,
+  ...
+}:
 with flakeConfig.user; {
   users.users."${name}" = {
     isNormalUser = true;

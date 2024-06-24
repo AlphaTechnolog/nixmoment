@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme" = "Default Dark";
+  "workbench.colorTheme" = "One Monokai";
   "workbench.iconTheme" = "Seti";
   "workbench.editor.labelFormat" = "short";
   "workbench.activityBar.location" = "hidden";

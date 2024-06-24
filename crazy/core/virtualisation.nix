@@ -1,15 +1,8 @@
-{pkgs, ...}: {
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-
-  environment.systemPackages = [
-    pkgs.qemu
-  ];
-
-  security = {
-    polkit.enable = true;
-  };
-
+{
+  flakeConfig,
+  pkgs,
+  ...
+}: {
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
       description = "polkit-gnome-authentication-agent-1";
@@ -27,22 +20,32 @@
     };
   };
 
-  virtualisation.vmVariant = {
-    virtualisation = {
+  environment.systemPackages = [pkgs.qemu];
+  security.polkit.enable = true;
+  programs.virt-manager.enable = true;
+
+  users.extraGroups = {
+    docker.members = [
+      flakeConfig.user.name
+    ];
+  };
+
+  virtualisation = {
+    libvirtd.enable = true;
+
+    vmVariant.virtualisation = {
       memorySize = 8048;
       cores = 2;
       graphics = false;
     };
-  };
 
-  users = {
-    groups.virt = {};
+    docker = {
+      enable = true;
 
-    users.virt = {
-      isNormalUser = true;
-      extraGroups = ["wheel"];
-      password = "virt";
-      group = "virt";
+      rootless = {
+        enable = true;
+        setSocketVariable = true;
+      };
     };
   };
 }

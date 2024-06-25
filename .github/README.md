@@ -3,10 +3,13 @@
 ## [Aether Shell](https://github.com/alphatechnolog/aether-shell) version
 ![banner-aether.png](./assets/banner-aether.png)
 
-## Plasma version
-![banner.png](./assets/banner.png)
+## Hyprland version
+![banner-hypr.png](./assets/banner-hypr.png)
 
-> Aether is the new environment based in awm im ~~slowly~~ making
+> Aether is the main desktop while the hypr version is an alternative desktop provided
+
+> [!NOTE]
+> The hyprland version is still in development, and shell elements such as the bar, etc, won't load since they're being done with ags and config have not been provided yet.
 
 Here's my effort to keep myself on nixos while having a comfy workstation.
 

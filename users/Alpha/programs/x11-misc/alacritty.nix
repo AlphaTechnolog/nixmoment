@@ -11,6 +11,11 @@
           normal
           bright
           ;
+
+        cursor = {
+          text = bright.white;
+          cursor = bright.black;
+        };
       };
 
       cursor = {

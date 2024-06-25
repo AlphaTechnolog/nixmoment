@@ -7,7 +7,7 @@
   nixpkgs.overlays = let
     fontsOverlays = _: prev: {
       nerdfonts = prev.nerdfonts.override {
-        fonts = ["Hack" "JetBrainsMono" "IosevkaTerm" "Iosevka" "NerdFontsSymbolsOnly"];
+        fonts = ["CascadiaCode" "Hack" "JetBrainsMono" "IosevkaTerm" "Iosevka" "NerdFontsSymbolsOnly"];
       };
     };
 

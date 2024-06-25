@@ -1,5 +1,5 @@
 {
-  wallpaper = ./wallpapers/custom.png;
+  wallpaper = ./wallpapers/mountain.png;
 
   neovim = _: {
     colorschemes.base16 = {
@@ -22,7 +22,7 @@
     };
 
     normal = {
-      black = "#212121";
+      black = "#363636";
       red = "#ab4642";
       green = "#a1b56c";
       yellow = "#f7ca88";

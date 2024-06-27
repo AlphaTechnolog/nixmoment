@@ -29,10 +29,12 @@
         };
       };
 
-      font = {
+      font = let
+        offset = 0;
+      in {
         size = 10.5;
-        offset.y = 4;
-        glyph_offset.y = 2;
+        offset.y = offset;
+        glyph_offset.y = if offset == 0 then 0 else offset;
 
         normal = {
           family = "monospace";

@@ -43,16 +43,16 @@
         "SUPER SHIFT, R, exec, ${reloadAgs}"
 
         # move focus
-        "SUPER, left, movefocus, l"
-        "SUPER, right, movefocus, r"
-        "SUPER, up, movefocus, u"
-        "SUPER, down, movefocus, d"
+        "SUPER, H, movefocus, l"
+        "SUPER, L, movefocus, r"
+        "SUPER, K, movefocus, u"
+        "SUPER, J, movefocus, d"
 
         # Move windows
-        "SUPERSHIFT, left, movewindow, l"
-        "SUPERSHIFT, right, movewindow, r"
-        "SUPERSHIFT, up, movewindow, u"
-        "SUPERSHIFT, down, movewindow, d"
+        "SUPERSHIFT, H, movewindow, l"
+        "SUPERSHIFT, L, movewindow, r"
+        "SUPERSHIFT, K, movewindow, u"
+        "SUPERSHIFT, J, movewindow, d"
 
         # Utilities
         "SUPER, Return, exec, ${pkgs.alacritty}/bin/alacritty"

@@ -1,6 +1,6 @@
 # kinda based on ashes
 {
-  wallpaper = ./wallpapers/night-desert.png;
+  wallpaper = ./wallpapers/icy.png;
 
   # no config yet
   neovim = _: {};

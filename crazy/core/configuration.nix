@@ -14,5 +14,6 @@
     ./virtualisation.nix
     ./bluetooth.nix
     ./shell.nix
+    ./steam.nix
   ];
 }
